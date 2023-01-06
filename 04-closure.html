@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Closure</title>
+</head>
+
+<body>
+    <script>
+        // 幂
+        function makePower(power) {
+            return function (number) {
+                return Math.pow(number, power)
+            }
+        }
+
+        let power2 = makePower(2)
+        let power3 = makePower(3)
+
+        console.log(power2(4))
+        console.log(power2(5))
+        console.log(power3(4))
+
+        // 工资
+        function makeSalary(base) {
+            return function (performance) {
+                return base + performance
+            }
+        }
+        let baseSalary1=makeSalary(12000)
+        let baseSalary2=makeSalary(15000)
+        
+        console.log(baseSalary1(3000))
+        console.log(baseSalary2(5000))
+    </script>
+
+</body>
+
+</html>
