@@ -16,5 +16,9 @@
   "bugs": {
     "url": "https://github.com/LxsZxh/LG-JS/issues"
   },
-  "homepage": "https://github.com/LxsZxh/LG-JS#readme"
+  "homepage": "https://github.com/LxsZxh/LG-JS#readme",
+  "dependencies": {
+    "folktale": "^2.3.2",
+    "lodash": "^4.17.21"
+  }
 }
