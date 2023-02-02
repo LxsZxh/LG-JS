@@ -30,5 +30,5 @@ console.log(res2);
 
 console.log("---------------------");
 
-const res3 = Maybe.of("Hello World").map((item) => item.toUpperCase());
+const res3 = Maybe.of("hello world").map((item) => item.toUpperCase());
 console.log(res3);
